@@ -1,7 +1,7 @@
 import { html, when, is, isNot } from '@beforesemicolon/markup';
 import style from './todo-item.css' with { type: 'css' };
-import { Button } from '../button/button.js';
-import {TodoStatus} from '../../state-stores/todos.js'
+import { Button } from '../button/button.ts';
+import {TodoStatus} from '../../state-stores/todos.ts'
 
 document.adoptedStyleSheets = [...document.adoptedStyleSheets, style];
 

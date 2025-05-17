@@ -6,9 +6,9 @@ import {
   deleteTodo, 
   updateTodo, 
   TodoStatus 
-} from './state-stores/todos.js';
-import { TodoItem } from './components/todo-item/todo-item.js';
-import { Button } from './components/button/button.js';
+} from './state-stores/todos.ts';
+import { TodoItem } from './components/todo-item/todo-item.ts';
+import { Button } from './components/button/button.ts';
 import style from './app.css' with { type: 'css' };
 
 document.adoptedStyleSheets = [...document.adoptedStyleSheets, style];

@@ -1,0 +1,21 @@
+.btn {
+  all: unset;
+  padding: 8px 10px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn.cta {
+  background-color: rgb(36, 184, 253);
+  color: #000;
+}

@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0px;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.todo-items-container {
+  padding: 20px 0;
+}
+
+.todo-items-container .todo-item {
+  margin-bottom: 20px;
+}

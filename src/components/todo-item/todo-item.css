@@ -1,0 +1,30 @@
+.todo-item {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.todo-item h3 {
+    margin: 0 0 5px;
+    text-transform: capitalize;
+}
+
+.todo-item .description {
+  font-size: 0.8rem;
+  margin: 0 0 10px;
+  color: #444;
+}
+
+.todo-item .action-items {
+  border-top: 1px solid #ddd;
+  padding: 10px 0 0;
+  display: flex;
+  gap: 5px;
+}
+
+.todo-item .date {
+  font-size: 0.7rem;
+  color: #777;
+  font-style: italic;
+  margin: 10px 0 0;
+}

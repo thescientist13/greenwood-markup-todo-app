@@ -1,0 +1,28 @@
+diff --git a/node_modules/@greenwood/cli/src/lib/walker-package-ranger.js b/node_modules/@greenwood/cli/src/lib/walker-package-ranger.js
+index 98640b4..3a09179 100644
+--- a/node_modules/@greenwood/cli/src/lib/walker-package-ranger.js
++++ b/node_modules/@greenwood/cli/src/lib/walker-package-ranger.js
+@@ -193,6 +193,7 @@ async function walkPackageForExports(dependency, packageJson, resolvedRoot) {
+     // https://unpkg.com/browse/robust-predicates@3.0.2/package.json
+     updateImportMap(dependency, exports, resolvedRoot);
+   } else if (typeof exports === "object") {
++    console.log('here', { exports });
+     for (const sub in exports) {
+       /*
+        * test for conditional subpath exports
+@@ -223,6 +224,7 @@ async function walkPackageForExports(dependency, packageJson, resolvedRoot) {
+           );
+         }
+       } else {
++        console.log({ sub });
+         // handle (unconditional) subpath exports
+         if (sub === ".") {
+           updateImportMap(dependency, `${exports[sub]}`, resolvedRoot);
+@@ -232,6 +234,7 @@ async function walkPackageForExports(dependency, packageJson, resolvedRoot) {
+           // filter out for just supported top level conditions
+           // https://unpkg.com/browse/d3@7.9.0/package.json
+           updateImportMap(dependency, `${exports[sub]}`, resolvedRoot);
++          break;
+         } else {
+           // let all other conditions "pass through" as is
+           updateImportMap(`${dependency}/${sub}`, `${exports[sub]}`, resolvedRoot);

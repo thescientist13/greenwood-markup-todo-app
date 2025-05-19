@@ -4,14 +4,16 @@
   "description": "An implementation of the Markup Todo App demo in Greenwood",
   "type": "module",
   "scripts": {
-    "dev": "greenwood develop",
-    "start": "greenwood develop",
-    "build": "greenwood build",
+    "dev": "NODE_OPTIONS='--experimental-strip-types' greenwood develop",
+    "start": "NODE_OPTIONS='--experimental-strip-types' greenwood develop",
+    "build": "NODE_OPTIONS='--experimental-strip-types' greenwood build",
     "serve": "greenwood serve",
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "@beforesemicolon/markup": "^1.14.1"
+    "@beforesemicolon/markup": "^1.14.1",
+    "global-jsdom": "^26.0.0",
+    "jsdom": "^26.1.0"
   },
   "devDependencies": {
     "@greenwood/cli": "~0.32.0",

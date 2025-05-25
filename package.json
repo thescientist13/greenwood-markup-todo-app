@@ -7,14 +7,12 @@
     "dev": "greenwood develop",
     "start": "greenwood develop",
     "build": "greenwood build",
-    "serve": "greenwood serve",
-    "postinstall": "patch-package"
+    "serve": "greenwood serve"
   },
   "dependencies": {
     "@beforesemicolon/markup": "^1.14.1"
   },
   "devDependencies": {
-    "@greenwood/cli": "~0.32.0",
-    "patch-package": "^8.0.0"
+    "@greenwood/cli": "~0.33.0-alpha.0"
   }
 }
